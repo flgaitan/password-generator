@@ -1,24 +1,24 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
- //array of options 
+ //variable array of options 
 var passwordCriteria = [];
 var passUppercase = ["A","B","C","D","E","F","G","H","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var passLowercase = ["a","b","c","d","e","f","g","h","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var passNumbers = ["1", "2","3","4","5","6","7","8","9","0"];
 var passSymbols = ["!","@","$","%","&","*","^","#","/","?","=","+","~",">","<","-","_"];
-var passwordCriteriaMet = [].concat(passUppercase,passLowercase,passSymbols,passNumbers)
-console.log (passwordCriteriaMet)
+var passwordCriteriaMet = [].concat(passUppercase,passLowercase,passSymbols,passNumbers);
+//console.log (passwordCriteriaMet)
 
-
-var passLength = 0
+//need a for loop to run until user chooses length required
+var passLength = []
 while (passLength <8 || passLength >128) {
   window.alert("Your password must be between 8-128 characters long.");
   var passLength = (prompt("Choose length below and click OK to confirm."));
   console.log("Length chosen : " + passLength)
 }
 
-//turning this values to false because its showing true in console
+//turning these values to false so conditions can be added that will alert user of conditions being met- at the same time minimize human error
 var passwrdUppercase = false;
 var passwrdLowercase = false;
 var passwrdNumbers = false;
@@ -37,24 +37,24 @@ var passwrdSymbols = window.confirm("Password will contain at least a symbol, cl
 }
 //
 if (passwrdUppercase){
-  passwordCriteria = passwordCriteria.concat(passwrdUppercase);
+  passwordCriteriaMet= passwordCriteriaMet.concat(passwrdUppercase);
     console.log("Uppercase criteria added, show uppercase letters" + passUppercase); 
 }
 if (passwrdLowercase){
-  passwordCriteria = passwordCriteria.concat(passwrdLowercase);
+  passwordCriteriaMet = passwordCriteriaMet.concat(passwrdLowercase);
     console.log("Lowercase criteria added, show lowercase letters" + passLowercase); 
 }
 if (passwrdNumbers){
-  passwordCriteria = passwordCriteria.concat(passwrdNumbers);
+  passwordCriteriaMet = passwordCriteriaMet.concat(passwrdNumbers);
     console.log("Numbers criteria added, show numbers" + passNumbers); 
 }
 if (passwrdSymbols){
-  passwordCriteria = passwordCriteria.concat(passwrdSymbols);
+  passwordCriteriaMet = passwordCriteriaMet.concat(passwrdSymbols);
     console.log("Symbols criteria added, show symbols"+ passSymbols); 
 }
 
 function generatePassword(){
-// create a for loop to choose password characters
+// create a for loop to choose password characters at random
 for (i=0; i<passLength; i++){
   passwordCriteria = passwordCriteria + passwordCriteriaMet[Math.floor(Math.random()* passwordCriteriaMet.length)];
   console.log(passwordCriteria);
@@ -62,19 +62,6 @@ for (i=0; i<passLength; i++){
 return passwordCriteria;
 }
 
-
-
-//var passLength = number.parseInt(passLength);
-//function randomItem(passLength){
-  //return Math.floor(Math.random()* passLength);
-//};
-
-
-//look up spread operator & console.log it (then check it)
-//if (passwrdNumbrs){
-  //passwordCriteria.push(passwordNumbers);
-//console.log(passwordCriteria);
-//};
 
 function writePassword() {
   var password = generatePassword();

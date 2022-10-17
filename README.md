@@ -13,21 +13,20 @@ This project only required to be pushed to github and be launched online.
 
 ## Usage
 
-WEBSITE LINK : 
+DEPLOYED WEBSITE LINK : 
+https://flgaitan.github.io/password-generator/
 
+To use the password generator, answer the promps, agree to what each is asking and then click the generate button to have a password made based on the criteria provided.
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+SCREENSHOT IMAGE:
+![alt text](assets/images/Screen%20Shot%202022%20Password-Generator.png)
 
 ## Credits
 If you followed tutorials, include links to those here as well.
 
 TUTORIAL LINKS LISTED BELOW IN NO PARTICULAR ORDER:
 
-"Password generator tutorial"
+"Password generator tutorial
 https://www.youtube.com/watch?v=dncKg-qS1dE
 
 "Push () Array function..."
@@ -51,7 +50,18 @@ https://youtu.be/G3BS3sh3D8Q
 "JavaScript Let vs Var Vs Const..."
 https://youtu.be/XgSjoHgy3Rk
 
+"Random Passowrd Generator..."
+https://youtu.be/eepZz8C60RU
 
+"Build a password generator with JavaScript.."
+https://youtu.be/iKo9pDKKHnc
+
+"Password generator| Javascript..."
+https://youtu.be/JheVaV6bPvE
+
+
+A tutor was used to go over questions about JavaScript functions and concepts.
+Office hours also were taken advantage of to gain more clarity on the tasks being asked and go through some examples based on the criteria.
 
 
 ## License
