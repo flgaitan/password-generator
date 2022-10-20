@@ -16,6 +16,9 @@ This project only required to be pushed to github and be launched online.
 DEPLOYED WEBSITE LINK : 
 https://flgaitan.github.io/password-generator/
 
+Github repository:
+https://github.com/flgaitan/password-generator
+
 To use the password generator, answer the promps, agree to what each is asking and then click the generate button to have a password made based on the criteria provided.
 
 SCREENSHOT IMAGE:
